@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "username": "Josemari",
+      "password": "781227",
+      "id": 1
+    },
+    {
+      "username": "Imelda",
+      "password": "Chi1234",
+      "id": 2
+    },
+    {
+      "username": "O.Esther ",
+      "password": "0807865",
+      "id": 3
+    },
+    {
+      "username": "kingsmann_graffix",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "username": "Himmaqulate01",
+      "password": "amarachi-1",
+      "id": 5
+    }
+  ]
+}

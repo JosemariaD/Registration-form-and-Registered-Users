@@ -22,6 +22,7 @@ class Registration extends Component {
     event.preventDefault();
     if (msgError.username !== "" && msgError.password !== "") {
       console.error("Form Not Valid");
+      alert("form Not Valid");
     } else {
       fetch("http://localhost:8000/users", {
         method: "POST",
@@ -34,10 +35,8 @@ class Registration extends Component {
         },
       })
         .then((response) => response.json())
-        .then((data) => console.log(data))
-        .catch((err) => console.error(err));
-
-      alert("Form Submitted successfully");
+        .then((data) => alert("form Submitted succesfuly"))
+        .catch((err) => alert("Fail to submit, Check your connection"));
     }
   }
 

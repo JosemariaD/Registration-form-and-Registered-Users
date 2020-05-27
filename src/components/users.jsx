@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class Users extends Component {
   state = {
@@ -24,8 +24,7 @@ class Users extends Component {
     let Url = "http://localhost:8000/users/" + userId;
     fetch(Url, {
       method: "DELETE",
-    });
-    this.ftUsers();
+    }).then((res) => this.ftUsers());
   };
 
   dUser() {
